@@ -22,12 +22,11 @@ with open(file_path, 'r') as f:
     dish_list = f.read().split('\n\n')
 
 dishes = (input('Ведите блюда через ,: '))
-dish_list = dishes.split(', ')
+dishes = dishes.split(', ')
 person_count = int(input('Введите количество персон: '))
 
 cook_book = create_cook_book(dish_list)
 pprint(cook_book)
 
-shop_list = get_shop_list_by_dishes(dish_list, person_count)
+shop_list = get_shop_list_by_dishes(dishes, person_count)
 pprint(shop_list)
-

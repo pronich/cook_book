@@ -2,7 +2,6 @@ def create_cook_book(dish_list):
     cook_book = {}
     for dish in dish_list:
         nlst = dish.split('\n')
-        # print(nlst)
         dishes = nlst[0]
         count = int(nlst[1])
         ingr_list = []
